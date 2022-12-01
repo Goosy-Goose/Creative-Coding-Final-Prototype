@@ -14,7 +14,7 @@ class Dialogue{
     this.displayTextBox();
     push()
     textAlign(LEFT);
-    text(this.speakerType, innerWidth/5, innerHeight-innerHeight/3);
+    text(this.speakerType, canvas.width/5, innerHeight-innerHeight/3);
     pop();
     if(this.showFullText){ //shows full text
       text(this.text, innerWidth/2, innerHeight-innerHeight/4, innerWidth*5/7)

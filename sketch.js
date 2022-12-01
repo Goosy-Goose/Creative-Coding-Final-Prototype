@@ -71,3 +71,8 @@ function makeImgGlitch(imgToGlitch){ //still not getting the glitched image to w
   text("ive been trying to get the glitch to work for two hours now and im done", 10, innerHeight/2)
   text("i was obviously unsucessful", 10, innerHeight/2+40);
 }
+
+
+
+//refs:
+//Forced Square font: https://www.dafont.com/forced-square.font?text=It%27s+a+nice+day+for+myurdr%21&back=theme
