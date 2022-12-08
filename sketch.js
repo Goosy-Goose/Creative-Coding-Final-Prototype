@@ -22,7 +22,7 @@ function setup(){
   createCanvas(CanvWidth, CanvHeight);
   glitch = new Glitch();
   VisNovel = new Scenes(ScenesCSV);
-  CurrentSceneNumber = 18;
+  CurrentSceneNumber = 0;
   CurrentChapterNumber = 0;
   Frame = 0;
   imageMode(CENTER);
