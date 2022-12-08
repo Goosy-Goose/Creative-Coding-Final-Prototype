@@ -1,3 +1,4 @@
+var CanvWidth, CanvHeight;
 var glitch
 var VisNovel;
 var Background_Classroom;
@@ -16,10 +17,11 @@ function preload(){
 }
 
 function setup(){
-  new Canvas('17:11');
+  getWidthAndHeight();
+  createCanvas(CanvWidth, CanvHeight);
   glitch = new Glitch();
   VisNovel = new Scenes(ScenesCSV);
-  CurrentSceneNumber = 0;
+  CurrentSceneNumber = 18;
   CurrentChapterNumber = 0;
   Frame = 0;
   imageMode(CENTER);
@@ -54,6 +56,22 @@ function goNextScene(){
 }
 
 
+function getWidthAndHeight(){
+  let maxH = window.innerHeight;
+  let maxW = window.innerWidth;
+  let partH = maxH/11;
+  let partW = maxW/17;
+  if(partH*17>maxW){
+    CanvWidth = maxW;
+    CanvHeight = partW*11;
+  } else if(partW*11>maxH){
+    CanvWidth = partH*17;
+    CanvHeight = maxH;
+  }else{
+    CanvWidth = maxW;
+    CanvHeight = maxH;
+  }
+}
 
 
 
