@@ -10,6 +10,9 @@ class Background{
     if(this.bgImg === "Classroom"){
       image(Background_Classroom, 0, 0, CanvWidth, CanvHeight)
     }
+    if(this.bgImg === "Player Home"){
+      image(Background_Player_Home, 0, 0, CanvWidth, CanvHeight);
+    }
 
     if(this.char1 ==="Kit Annoyed"){
       image(Kit_Annoyed, 0,0, CanvWidth, CanvHeight);

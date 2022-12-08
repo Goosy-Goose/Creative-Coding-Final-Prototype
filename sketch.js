@@ -1,7 +1,7 @@
 var CanvWidth, CanvHeight;
 var glitch
 var VisNovel;
-var Background_Classroom;
+var Background_Classroom, Background_Player_Home;
 var Kit_Annoyed;
 var ForcedSquare;
 var ScenesCSV;
@@ -10,7 +10,8 @@ var Frame;
 
 
 function preload(){
-  Background_Classroom = loadImage('./resources/images/backgrounds/Background_Classroom.png')
+  Background_Classroom = loadImage('./resources/images/backgrounds/Background_Classroom.png');
+  Background_Player_Home = loadImage('./resources/images/backgrounds/Background_Player_Home.png');
   Kit_Annoyed = loadImage('./resources/images/characters/Kit_Annoyed.png')
   ScenesCSV = loadTable("./resources/Scenes.csv", "csv", "header");
   ForcedSquare = loadFont("./resources/fonts/FORCED SQUARE.ttf");
