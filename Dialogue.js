@@ -14,12 +14,12 @@ class Dialogue{
     this.displayTextBox();
     push()
     textAlign(LEFT);
-    text(this.speakerType, CanvWidth/5, CanvHeight-CanvHeight/3);
+    text(this.speakerType, CanvWidth/5, CanvHeight-CanvHeight/6 - CanvHeight/11);
     pop();
     if(this.showFullText){ //shows full text
-      text(this.text,CanvWidth/2, CanvHeight-CanvHeight/4,CanvWidth*5/7)
+      text(this.text,CanvWidth/2, CanvHeight-CanvHeight/6,CanvWidth*5/7)
     } else{ //f full text is not shown, continues to scroll 
-      text(this.text.substring(0, frameCount-initFrame),CanvWidth/2, CanvHeight-CanvHeight/4,CanvWidth*5/7)
+      text(this.text.substring(0, frameCount-initFrame),CanvWidth/2, CanvHeight-CanvHeight/6,CanvWidth*5/7)
     }
     if(!this.showFullText)
     this.checkFullTextDisplayed(initFrame);
@@ -46,8 +46,8 @@ class Dialogue{
   displayTextBox(){
     push()
     noStroke();
-    fill(240,240,240,170)
-    rect(CanvWidth/2, CanvHeight-CanvHeight/4,CanvWidth*5/7, CanvHeight/4)
+    fill(240,240,240,220)
+    rect(CanvWidth/2, CanvHeight-CanvHeight/6,CanvWidth*5/7, CanvHeight/4)
     pop()
   }
 
